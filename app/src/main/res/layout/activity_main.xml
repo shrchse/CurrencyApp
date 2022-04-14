@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/konversi"
+        android:layout_width="311dp"
+        android:layout_height="59dp"
+        android:text="@string/konversi"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/myOrange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/money_value"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/money_value"
+        app:layout_constraintTop_toBottomOf="@+id/money_value"
+        app:layout_constraintVertical_bias="0.045"
+        tools:ignore="TextContrastCheck"/>
+
+    <EditText
+        android:id="@+id/money_value"
+        android:layout_width="308dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="324dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pilih_mata_uang"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.119" />
+
+    <RadioGroup
+        android:layout_width="167dp"
+        android:layout_height="194dp"
+        android:id="@+id/money_currency"
+        app:layout_constraintBottom_toTopOf="@+id/money_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.794">
+
+        <RadioButton
+            android:id="@+id/US"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/us_dollar" />
+
+        <RadioButton
+            android:id="@+id/EU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/euro" />
+
+        <RadioButton
+            android:id="@+id/Jpn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/japanese_yen" />
+
+        <RadioButton
+            android:id="@+id/EAU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/saudi_riyal"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="163dp"
+        android:layout_height="39dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/konversi"
+        app:layout_constraintVertical_bias="0.051" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Currency App</string>
+
+    <string name="count">Hasil : %s</string>
+    <string name="konversi">Konversi</string>
+    <string name="pilih_mata_uang">Pilih Mata Uang?</string>
+    <string name="us_dollar">US Dollar</string>
+    <string name="euro">Euro</string>
+    <string name="japanese_yen">Japanese Yen</string>
+    <string name="saudi_riyal">Saudi Riyal</string>
+</resources>
